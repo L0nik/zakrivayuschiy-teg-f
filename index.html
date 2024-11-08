@@ -17,8 +17,10 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
-      <nav class="theme-menu header__theme-menu">-->
+    <header class="header content-inline-size">
+      <div class="header__logo">&lt/html&gt</div>
+      <h1 class="header__title">закрывающий тег</h1>
+      <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
@@ -44,10 +46,10 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <article>
-        <h2>Фритрек и нулевой спринт: Подготовка к работе</h2>
-        <picture>
+    <main class="content content-inline-size">
+      <article class="content__card">
+        <h2 class="content__card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <picture class="content__card-image">
           <source
             srcset="./images/car_375x375.avif 1x,
             ./images/car_700x700.avif 2x,
@@ -74,18 +76,48 @@
           >
           <img src="./images/car_700x700.jpg" alt="Изображение автомобиля">
         </picture>
-        <p>
-          Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
-        </p>
-        <p>
-          Место для ваших воспоминаний о начале обучения.
-        </p> 
+        <div class="content__card-text">
+          <p class="content__card-text_paragraph">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="content__card-text_paragraph">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+          <button class="card__like-button">
+            <svg class="like-icon" width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 0H3V3H6V0Z" fill="black"/>
+              <path d="M9 0H6V3H9V0Z" fill="black"/>
+              <path d="M3 3H0V6H3V3Z" fill="black"/>
+              <path d="M3 6H0V9H3V6Z" fill="black"/>
+              <path d="M3 9H0V12H3V9Z" fill="black"/>
+              <path d="M12 0H9V3H12V0Z" fill="black"/>
+              <path d="M6 12H3V15H6V12Z" fill="black"/>
+              <path d="M9 15H6V18H9V15Z" fill="black"/>
+              <path d="M12 18H9V21H12V18Z" fill="black"/>
+              <path d="M21 0H24V3H21V0Z" fill="black"/>
+              <path d="M18 0H21V3H18V0Z" fill="black"/>
+              <path d="M24 3H27V6H24V3Z" fill="black"/>
+              <path d="M24 6H27V9H24V6Z" fill="black"/>
+              <path d="M24 9H27V12H24V9Z" fill="black"/>
+              <path d="M15 0H18V3H15V0Z" fill="black"/>
+              <path d="M21 12H24V15H21V12Z" fill="black"/>
+              <path d="M18 15H21V18H18V15Z" fill="black"/>
+              <path d="M15 18H18V21H15V18Z" fill="black"/>
+              <path d="M15 3H12V6H15V3Z" fill="black"/>
+              <path d="M15 21H12V24H15V21Z" fill="black"/>
+            </svg>              
+            <span class="button__text">Like</span>
+          </button>
+        </div> 
       </article>
     </main>
-    <footer>
-      <svg class="svg-620eq7571">
-        <use xlink:href="#svg-620eq7571" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-      </svg>
+    <footer class="footer content-inline-size">
+      <button>
+        <svg class="svg-620eq7571">
+          <use xlink:href="#svg-620eq7571" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>
