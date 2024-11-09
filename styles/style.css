@@ -26,7 +26,6 @@
 }
 
 .content-inline-size {
-  inline-size: 100%;
   inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   margin-inline-start: auto;
   margin-inline-end: auto;
@@ -88,11 +87,40 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-block-end: 50px;
 }
 
 .content__card {
 
 }
+
+.content__image-container {
+  position: relative;
+}
+
+.content__image-label {
+  position: absolute;
+  inset-inline-end: 25px;
+  inset-block-start: 25px;
+  font-family: var(--font-family-accent);
+  font-size: 14px;
+  line-height: 14px;
+  text-shadow:
+  -1px 0 var(--label-stroke-color), 
+   0 1px var(--label-stroke-color), 
+   1px 0 var(--label-stroke-color), 
+   0 -1px var(--label-stroke-color);
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+}
+
+@supports((text-stroke: 1px var(--label-stroke-color)) or (-webkit-text-stroke: 1px var(--label-stroke-color))) {
+  .content__image-label {
+      -webkit-text-stroke: 1px var(--label-stroke-color);
+      text-stroke: 1px var(--label-stroke-color);
+      text-shadow: none;
+  }
+} 
 
 .content__card-title {
   border: 2px solid var(--main-color);
@@ -124,11 +152,14 @@
   inline-size: 130px;
   background: none;
   border: 2px solid #000000;
+  padding: 9px 17px;
+  text-transform: capitalize;
+}
+
+.button__text {
   font-family: var(--font-family-accent), sans-serif;
   font-size: 14px;
   line-height: 90%;
-  padding: 9px 17px;
-  text-transform: capitalize;
 }
 
 .like-icon {
@@ -136,8 +167,42 @@
   inset-inline-start: -40px;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__save-button {
+  border: 2px solid var(--main-color);
+  background-color: var(--background-color);
+  padding: 15px 20px;
+}
+
+.floppy-icon {
+  inline-size: 21px;
+  block-size: 21px;
+}
+
 @media (width <= 375px) {
+
   .content-inline-size {
     inline-size: 100%;
   }
+
+  .floppy-icon {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+
+  .footer__save-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .content__image-label {
+    inset-inline-end: 13px;
+  }
+
 }

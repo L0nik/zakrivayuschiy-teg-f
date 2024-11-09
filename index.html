@@ -49,33 +49,36 @@
     <main class="content content-inline-size">
       <article class="content__card">
         <h2 class="content__card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
-        <picture class="content__card-image">
-          <source
-            srcset="./images/car_375x375.avif 1x,
-            ./images/car_700x700.avif 2x,
-            ./images/car_700x700.avif 3x"
-            type="image/avif"
-          >
-          <source
-            srcset="./images/car_375x375.webp 1x,
-            ./images/car_700x700.webp 2x,
-            ./images/car_700x700.webp 3x"
-            type="image/webp"
-          >
-          <source
-            srcset="./images/car_375x375.jpg 1x,
-            ./images/car_700x700.jpg 2x,
-            ./images/car_700x700.jpg 3x"
-            type="image/jpeg"
-          >
-          <source
-            srcset="./images/car_375x375.png 1x,
-            ./images/car_700x700.png 2x,
-            ./images/car_700x700.png 3x"
-            type="image/png"
-          >
-          <img src="./images/car_700x700.jpg" alt="Изображение автомобиля">
-        </picture>
+        <div class="content__image-container">
+          <p class="content__image-label">&lt/HTML&gt</p>
+          <picture class="content__card-image">
+            <source
+              srcset="./images/car_375x375.avif 1x,
+              ./images/car_700x700.avif 2x,
+              ./images/car_700x700.avif 3x"
+              type="image/avif"
+            >
+            <source
+              srcset="./images/car_375x375.webp 1x,
+              ./images/car_700x700.webp 2x,
+              ./images/car_700x700.webp 3x"
+              type="image/webp"
+            >
+            <source
+              srcset="./images/car_375x375.jpg 1x,
+              ./images/car_700x700.jpg 2x,
+              ./images/car_700x700.jpg 3x"
+              type="image/jpeg"
+            >
+            <source
+              srcset="./images/car_375x375.png 1x,
+              ./images/car_700x700.png 2x,
+              ./images/car_700x700.png 3x"
+              type="image/png"
+            >
+            <img src="./images/car_700x700.jpg" alt="Изображение автомобиля">
+          </picture>
+        </div>
         <div class="content__card-text">
           <p class="content__card-text_paragraph">
             Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
@@ -112,8 +115,8 @@
       </article>
     </main>
     <footer class="footer content-inline-size">
-      <button>
-        <svg class="svg-620eq7571">
+      <button class="footer__save-button">
+        <svg class="floppy-icon">
           <use xlink:href="#svg-620eq7571" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
