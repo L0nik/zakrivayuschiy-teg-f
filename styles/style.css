@@ -76,6 +76,7 @@
 .theme-menu__button:disabled {
   position: relative;
   pointer-events: none;
+  opacity: 0.6;
 }
 
 .theme-menu__button:disabled::before {
