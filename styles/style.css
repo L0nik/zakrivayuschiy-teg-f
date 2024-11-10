@@ -75,12 +75,52 @@
 
 .theme-menu__button:disabled {
   position: relative;
+  pointer-events: none;
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  inset-inline-start: -17px;
+  inset-inline-start: -20px;
+  animation: animationname 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes animationname {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(4px);
+  }
+}
+
+.theme-menu__button:focus-visible,
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  inline-size: 0%;
+  height: 2px;
+  background-color: var(--main-color);
+  /*transform: scaleX(0);*/
+  transition: inline-size 0.3s ease;
+  
+}
+
+.theme-menu__button:focus-visible::after {
+  inline-size: 100%;
+  opacity: 0.6;
+  /*transform: scaleX(1);*/
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 .content {
