@@ -105,12 +105,19 @@
       </article>
     </main>
     <footer class="footer content-inline-size">
-      <button class="footer__save-button">
+      <button class="footer__save-button" onclick="window['popup'].showModal()" aria-controls="popup">
         <svg class="floppy-icon">
           <use xlink:href="#svg-620eq7571" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
+      <dialog class="popup" id="popup">
+        <svg class="floppy-icon">
+          <use xlink:href="#svg-620eq7571" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+        <p class="popup-text">Вставьте дискету, чтобы продолжить</p>
+        <button class="popup-button" onclick="window['popup'].close()">OK</button>
+      </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>

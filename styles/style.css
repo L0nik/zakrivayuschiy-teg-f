@@ -33,7 +33,7 @@
 
 .header {
   border: 2px solid var(--main-color);
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent), sans-serif;
   margin-block-start: 100px;
   margin-block-end: 100px;
   padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem) 25px;
@@ -143,7 +143,7 @@
   position: absolute;
   inset-inline-end: 25px;
   inset-block-start: 25px;
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent), sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-shadow:
@@ -370,6 +370,38 @@
   block-size: 21px;
   mix-blend-mode: difference;
   color: var(--button-text-color);
+}
+
+.popup[open] {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 20px;
+  grid-template-columns: 1fr 6fr;
+  inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
+  padding: 30px clamp(2.5rem, 2.7201rem + -0.939vw, 1.875rem);
+  font-family: var(--font-family-accent), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.popup::backdrop {
+  background: #000000;
+  opacity: 0.75;
+}
+
+.popup[open] .floppy-icon {
+  align-self: center;
+  justify-self: center;
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.popup[open] .popup-button {
+  grid-column: span 2;
+  background-color: var(--background-color);
+  padding: 12.5px;
 }
 
 @media (width <= 375px) {
