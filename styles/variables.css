@@ -12,4 +12,6 @@
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --label-stroke-color: #FFFFFF;
   --button-text-color: #FFFFFF;
+  --heart-contour-color: black;
+  --heart-fill-color: red;
 }
