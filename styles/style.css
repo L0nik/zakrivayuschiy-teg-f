@@ -177,6 +177,38 @@
   object-fit: contain;
 }
 
+.filter-brightness {
+  filter: brightness(200%);
+}
+
+.filter-contrast {
+  filter: contrast(20%);
+}
+
+.filter-blur {
+  filter: blur(5px);
+}
+
+.filter-grayscale {
+  filter: grayscale(0.8);
+}
+
+.filter-saturate {
+  filter: saturate(200%);
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(90deg);
+}
+
+.filter-sepia {
+  filter: sepia(100%);
+}
+
+.filter-invert {
+  filter: invert(0.7);
+}
+
 .content__card-text {
   display: flex;
   flex-direction: column;
