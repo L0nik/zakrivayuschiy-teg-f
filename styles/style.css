@@ -173,6 +173,7 @@
   object-fit: contain;
   object-position: center;
   border: 2px solid var(--main-color);
+  border-top: none;
 }
 
 .filter-multiple {
@@ -208,13 +209,18 @@
 }
 
 .content__card-text {
-  display: flex;
-  flex-direction: column;
-  gap: 27px;
   border: 2px solid var(--main-color);
   background-color: var(--background-color);
   padding: 25px;
   line-height: 21px;
+}
+
+p.content__card-text-paragraph {
+  margin-block-end: 27px;
+}
+
+p.content__card-text-paragraph:last-of-type {
+  margin-block-end: 25px;
 }
 
 .card__button-container {
