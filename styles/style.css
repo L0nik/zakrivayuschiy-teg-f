@@ -230,7 +230,6 @@ p.content__card-text-paragraph:last-of-type {
 
 .card__icon-button {
   background: none;
-  border: none;
   cursor: pointer;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
@@ -274,7 +273,7 @@ p.content__card-text-paragraph:last-of-type {
   transform: scaleX(1);
 }
 
-.card__like-button{
+.card__like-button {
   display: flex;
   justify-content: center;
   align-items: center;
