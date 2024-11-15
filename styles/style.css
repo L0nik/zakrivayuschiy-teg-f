@@ -88,7 +88,7 @@
   position: absolute;
   inset-inline-start: -20px;
   inset-block-start: 0;
-  animation: back-and-forth 0.5s ease-in-out infinite alternate;
+  animation: slide-in-from-left 0.5s ease-in-out infinite alternate;
 }
 
 .theme-menu__button:focus {
@@ -127,7 +127,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin-block-end: 50px;
+  margin-block-end: 100px;
 }
 
 .content__image-container {
@@ -344,7 +344,7 @@ p.content__card-text-paragraph:last-of-type {
 
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: heartbeat 0.3s 0.1s 1 ease-in alternate;
+  animation: scale-up 0.3s 0.1s 1 ease-in alternate;
 }
 
 .sparks {
@@ -352,7 +352,7 @@ p.content__card-text-paragraph:last-of-type {
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s 0.3s 1 ease-in alternate;
+  animation: fade-in 0.3s 0.3s 1 ease-in alternate;
 }
 
 .content__save {
@@ -376,8 +376,10 @@ p.content__card-text-paragraph:last-of-type {
 }
 
 .popup {
+  row-gap: 30px;
+  column-gap: 20px;
+  grid-template-columns: 1fr 6fr;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
-  /*padding: 30px clamp(2.5rem, 2.7201rem - 0.939vw, 1.875rem);*/
   padding: 30px calc(2.7201rem - 0.939vw);
   font-family: var(--font-family-accent), sans-serif;
   font-weight: 400;
@@ -390,9 +392,6 @@ p.content__card-text-paragraph:last-of-type {
 
 .popup[open] {
   display: grid;
-  row-gap: 30px;
-  column-gap: 20px;
-  grid-template-columns: 1fr 6fr;
 }
 
 .popup::backdrop {

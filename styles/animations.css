@@ -13,7 +13,7 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-@keyframes back-and-forth {
+@keyframes slide-in-from-left {
   from {
     transform: translateX(0);
   }
@@ -22,7 +22,7 @@
   }
 }
 
-@keyframes heartbeat {
+@keyframes scale-up {
   from {
     transform: scale(1);
   }
@@ -31,7 +31,7 @@
   }
 }
 
-@keyframes sparks {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
